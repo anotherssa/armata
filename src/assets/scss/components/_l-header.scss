@@ -1,0 +1,221 @@
+.l-header {
+  background-color: #1e1f1f;
+
+  .l-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .first-part {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .info-bar_tablet {
+    display: none;
+    margin-left: auto;
+    margin-right: 25px;
+    text-align: right;
+  }
+
+  .phone_tablet {
+    display: flex;
+    font: italic 13px OpenSans, sans-serif;
+    color: #888;
+
+    .accent {
+      margin-left: 3px;
+      font: italic bold 22px OpenSans, sans-serif;
+      line-height: 24px;
+      color: #ebc532;
+    }
+  }
+
+  .ask-question_tablet {
+    font: 13px OpenSans-Light, sans-serif;
+    color: #fff;
+  }
+
+  .btn__toggle-dropdown-menu {
+    padding: 20px 25px;
+    border-right: 1px solid #fff;
+    font: 12px OpenSans, sans-serif;
+    color: #fff;
+
+    .fa-bars {
+      font-size: 24px;
+    }
+  }
+
+  .logo {
+    display: block;
+    margin-left: 20px;
+    width: 83px;
+    height: 31px;
+    background: url(../images/logo-mobile.png);
+  }
+
+  .second-part {
+    border-top: 1px solid #fff;
+    width: 100%;
+
+    .separator-left {
+      display: none;
+    }
+  }
+
+  .info-bar {
+    display: none;
+  }
+
+  .info-bar__item {
+    display: flex;
+    align-items: center;
+    margin-left: 8%;
+  }
+
+  .ask-question {
+    border-bottom: 1px dashed #fff;
+    text-decoration: none;
+  }
+
+  .ask-question:hover {
+    border-bottom: none;
+  }
+
+  .info-bar__phone {
+    font-size: 17px;
+
+    .semi-bold {
+      font-family: OpenSans-Semibold, sans-serif;
+    }
+  }
+
+  .navbar_main {
+    display: none;
+  }
+
+  .menu.menu_primary {
+    display: flex;
+    flex-direction: column;
+    font: 18px OpenSans, sans-serif;
+  }
+
+  .menu_primary .menu__item {
+    border-bottom: 1px solid #4a4b4b;
+  }
+
+  .menu_primary .menu__item:last-child {
+    border-bottom: none;
+  }
+
+  .menu_primary .menu__link {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+  }
+
+  .menu_primary .menu__link:hover,
+  .menu_primary .menu__item_active .menu__link {
+    background-color: #eec832;
+    text-decoration: none;
+  }
+
+  @media (min-width: 425px) {
+    .info-bar_tablet {
+      display: block;
+    }
+  }
+
+  @media (min-width: 940px) {
+    .l-container {
+      padding: 0 15px;
+    }
+
+    .logo {
+      margin-left: 0;
+      width: 234px;
+      height: 71px;
+      background: url(../images/logo.png);
+    }
+
+    .btn__toggle-dropdown-menu {
+      display: none;
+    }
+
+    .info-bar_tablet {
+      display: none;
+    }
+
+    .first-part {
+      width: 30%;
+    }
+
+    .info-bar {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 0;
+      width: 100%;
+      font: 17px OpenSans-Light, sans-serif;
+      color: #fff;
+
+      .icon {
+        margin-right: 5px;
+      }
+
+      a {
+        color: #fff;
+      }
+    }
+
+    .second-part {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      width: 70%;
+      border-top: none;
+
+      .separator-left {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
+      }
+    }
+
+    .navbar_main {
+      display: block !important;
+    }
+
+    .navbar {
+      padding: 10px 0;
+    }
+
+    .menu.menu_primary {
+      flex-direction: row;
+    }
+
+    .menu_primary .menu__item {
+      margin-left: 40px;
+      border-bottom: none;
+    }
+
+    .menu_primary .menu__link {
+      display: inline;
+      padding: 0;
+      color: #fff;
+    }
+
+    .menu_primary .menu__link:hover,
+    .menu_primary .menu__item_active .menu__link {
+      background-color: transparent;
+      color: #eec832;
+      text-decoration: underline;
+    }
+  }
+}

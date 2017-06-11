@@ -1,0 +1,10 @@
+.section-heading {
+  border-bottom: 4px solid #ebcf5f;
+  font: bold 24px Acrom-Bold, sans-serif;
+  text-transform: uppercase;
+  color: #000;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+}

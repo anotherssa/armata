@@ -1,0 +1,102 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-access-control-systems {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 51px;
+  height: 51px;
+}
+.icon-ask-question {
+  background-image: url(../images/sprite.png);
+  background-position: -102px -102px;
+  width: 25px;
+  height: 25px;
+}
+.icon-cctv {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -51px;
+  width: 51px;
+  height: 51px;
+}
+.icon-communication {
+  background-image: url(../images/sprite.png);
+  background-position: -51px -102px;
+  width: 51px;
+  height: 50px;
+}
+.icon-consumables {
+  background-image: url(../images/sprite.png);
+  background-position: -102px 0px;
+  width: 51px;
+  height: 51px;
+}
+.icon-contacts-email {
+  background-image: url(../images/sprite.png);
+  background-position: -153px 0px;
+  width: 49px;
+  height: 51px;
+}
+.icon-contacts-map-marker {
+  background-image: url(../images/sprite.png);
+  background-position: -153px -102px;
+  width: 49px;
+  height: 50px;
+}
+.icon-contacts-phone {
+  background-image: url(../images/sprite.png);
+  background-position: -153px -51px;
+  width: 49px;
+  height: 51px;
+}
+.icon-email {
+  background-image: url(../images/sprite.png);
+  background-position: -127px -102px;
+  width: 25px;
+  height: 25px;
+}
+.icon-fire-signalising {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -102px;
+  width: 51px;
+  height: 51px;
+}
+.icon-intercom {
+  background-image: url(../images/sprite.png);
+  background-position: -102px -51px;
+  width: 51px;
+  height: 51px;
+}
+.icon-networks {
+  background-image: url(../images/sprite.png);
+  background-position: -51px -51px;
+  width: 51px;
+  height: 51px;
+}
+.icon-phone {
+  background-image: url(../images/sprite.png);
+  background-position: -102px -127px;
+  width: 25px;
+  height: 25px;
+}
+.icon-security-signalising {
+  background-image: url(../images/sprite.png);
+  background-position: -51px 0px;
+  width: 51px;
+  height: 51px;
+}

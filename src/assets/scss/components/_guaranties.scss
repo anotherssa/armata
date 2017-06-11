@@ -1,0 +1,52 @@
+.guaranties-section {
+  padding: 50px 0 50px 0;
+  background: url(../images/guaranties-section-bg.jpg) center no-repeat;
+  background-size: cover;
+
+  .section-heading {
+    display: inline-block;
+    margin: 0 0 40px 0;
+  }
+
+  .guaranties {
+    @include list-reset;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font: 16px ProximaNova-Semibold, sans-serif;
+    color: #333;
+  }
+
+  .guaranties__item {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .guaranties__img {
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+
+  @media (min-width: 425px) {
+    .guaranties__item {
+      width: 45%;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .guaranties {
+      justify-content: flex-start;
+    }
+
+    .guaranties__item {
+      margin-right: 20px;
+      width: 20%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 180px;
+  }
+}

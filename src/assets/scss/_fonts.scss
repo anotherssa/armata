@@ -1,0 +1,14 @@
+@include font-face('OpenSans-Light', '../fonts/OpenSans/OpenSans-Light', $file-formats: ttf);
+@include font-face('OpenSans', '../fonts/OpenSans/OpenSans-Regular', $file-formats: ttf);
+@include font-face('OpenSans-Semibold', '../fonts/OpenSans/OpenSans-Semibold', $file-formats: ttf);
+@include font-face('OpenSans-Bold', '../fonts/OpenSans/OpenSans-Bold', $file-formats: ttf);
+
+@include font-face('Acrom-Bold', '../fonts/Acrom/Acrom-Bold', $file-formats: ttf);
+
+@include font-face('ProximaNova', '../fonts/ProximaNova/ProximaNova-Regular', $file-formats: ttf);
+@include font-face('ProximaNova-Light', '../fonts/ProximaNova/ProximaNova-Light', $file-formats: ttf);
+@include font-face('ProximaNova-Bold', '../fonts/ProximaNova/ProximaNova-Bold', $file-formats: ttf);
+//@include font-face('ProximaNova-Semibold', '../fonts/ProximaNova/ProximaNova-Semibold', $file-formats: ttf);
+
+
+@include font-face('PTSans', '../fonts/PT_Sans/PT_Sans-Web-Regular', $file-formats: ttf);

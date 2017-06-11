@@ -1,0 +1,123 @@
+.carousel-section {
+  overflow: hidden;
+  background: url(../images/carousel-section-bg.jpg) no-repeat center;
+  background-size: cover;
+
+  .l-container {
+    padding: 0;
+  }
+
+  .carousel_main {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 7px rgba(0, 0, 0, .17);
+  }
+
+  .carousel__item {
+    position: relative;
+  }
+
+  .carousel__item:nth-child(n) {
+    display: none;
+  }
+
+  .slick-initialized .carousel__item:nth-child(n) {
+    display: block;
+  }
+
+  .carousel__link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    background-color: rgba(31, 31, 31, .8);
+    font: 24px ProximaNova, sans-serif;
+    text-align: center;
+    color: #ffc900;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .carousel__link:hover {
+    background-color: rgb(31, 31, 31);
+  }
+
+  .slick-arrow {
+    display: none !important;
+    position: absolute;
+    z-index: 1;
+    width: 35px;
+    height: 67px;
+    border: none;
+    font-size: 0;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    left: 15px;
+    background: url(../images/main-carousel-left-arrow.png);
+  }
+
+  .slick-next {
+    right: 15px;
+    background: url(../images/main-carousel-right-arrow.png);
+  }
+
+  .slick-dots {
+    @include list-reset;
+
+    display: none !important;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .slick-dots li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .slick-dots button {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 0;
+    cursor: pointer;
+  }
+
+  .slick-dots button:hover,
+  .slick-dots .slick-active button {
+    background-color: #fff;
+  }
+
+  img {
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .l-container {
+      padding: 0 15px;
+    }
+
+    .carousel_main {
+      margin-top: 35px;
+      margin-bottom: 35px;
+    }
+
+    .carousel__link {
+      display: none;
+    }
+
+    .slick-dots {
+      display: block !important;
+    }
+
+    .slick-arrow {
+      display: block !important;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.out-partners-section {
+  padding: 30px 0;
+
+  .our-partners {
+    @include list-reset;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .our-partners__item {
+    margin: 10px 0;
+    width: 48%;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    .our-partners__item {
+      width: 24%;
+    }
+  }
+}
+

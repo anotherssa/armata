@@ -1,0 +1,118 @@
+.leave-request {
+  display: none;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  padding: 50px 0;
+  border: 1px solid #fff;
+  border-radius: 300px;
+  transform: translateY(-52%);
+  background-color: rgba(16, 17, 22, .75);
+
+  .separator-left,
+  .separator-right {
+    width: 11%;
+    height: 1px;
+  }
+
+  .separator-left {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
+  }
+
+  .separator-right {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 1));
+  }
+
+  .leave-request__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 9% 10px 9%;
+  }
+
+  h2 {
+    margin: 0;
+    font: 28px ProximaNova, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+
+  .leave-request__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto 15px auto;
+    padding: 15px 20px;
+    width: 90%;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    background-color: rgba(16, 17, 22, .75);
+  }
+
+  .leave-request__name-field,
+  .leave-request__email-field {
+    padding: 20px 30px;
+    border: none;
+    border-bottom: 3px solid #eec832;
+    outline: none;
+    font: 18px ProximaNova-Light, sans-serif;
+    color: #333;
+    background-color: #fff;
+  }
+
+  .leave-request__name-field {
+    border-radius: 100px 0 0 100px;
+  }
+
+  .leave-request__email-field {
+    border-radius: 0;
+  }
+
+  .leave-request__btn {
+    border-radius: 0 100px 100px 0;
+  }
+
+  .leave-request__name-field,
+  .leave-request__email-field,
+  .leave-request__btn {
+    width: 32.6%;
+  }
+
+  .leave-request__btn {
+    border: none;
+    background-color: #eec832;
+    font: 24px ProximaNova, sans-serif;
+    color: #1e1f1f;
+    cursor: pointer;
+  }
+
+  .leave-request__statement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 9% 0 9%;
+    text-align: center;
+    font: 18px ProximaNova-Light, sans-serif;
+    color: #fff;
+
+    .accented {
+      text-transform: uppercase;
+      color: #eec832;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    display: block;
+  }
+
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 36px;
+    }
+
+    .leave-request__statement {
+      font-size: 24px;
+    }
+  }
+}

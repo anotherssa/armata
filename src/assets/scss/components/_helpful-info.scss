@@ -1,0 +1,111 @@
+.helpful-info-section {
+  padding: 50px 0;
+  background-color: #eee;
+
+  h2 {
+    margin: 0 0 40px 0;
+    font: bold 30px Acrom-Bold, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .helpful-info {
+    overflow: hidden;
+  }
+
+  .helpful-info .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 0;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .helpful-info .slick-prev {
+    right: 50px;
+    background: url(../images/helpful-info-left-arrows.png);
+  }
+
+  .helpful-info .slick-prev:hover {
+    background-position: right 0;
+  }
+
+  .helpful-info .slick-next {
+    right: 0;
+    background: url(../images/helpful-info-right-arrows.png) right 0;
+  }
+
+  .helpful-info .slick-next:hover {
+    background-position: left 0;
+  }
+
+  .helpful-info__item {
+    display: flex;
+  }
+
+  .helpful-info__item:nth-child(n) {
+    display: none;
+  }
+
+  .slick-initialized .helpful-info__item:nth-child(n) {
+    display: flex;
+  }
+
+  .helpful-info__thumbnail {
+    display: none;
+    object-fit: cover;
+  }
+
+  .helpful-info__excerpt {
+    position: relative;
+    padding: 40px;
+    background-color: #fff;
+    font: bold 14px ProximaNova-Bold, sans-serif;
+    color: #999;
+
+    p {
+      margin: 20px 0;
+    }
+  }
+
+  .helpful-info__title {
+    margin-bottom: 30px;
+    font: bold 20px ProximaNova-Bold, sans-serif;
+    text-transform: uppercase;
+    color: #333;
+  }
+
+  .helpful-info__read-more {
+    display: inline-block;
+    padding: 6px 18px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    font: 17px ProximaNova, sans-serif;
+    text-decoration: none;
+    color: #333;
+  }
+
+  @media (min-width: 1024px) {
+    .helpful-info__thumbnail {
+      display: block;
+    }
+
+    .helpful-info__excerpt::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: -20px;
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+
+      border-right: 20px solid #fff;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.l-footer {
+  padding: 25px 0;
+  background-color: #e8e8e8;
+  font: 16px OpenSans, sans-serif;
+  text-align: center;
+  color: #666;
+
+  .separator {
+    display: none;
+  }
+
+  a {
+    color: #666;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @media (min-width: 768px) {
+    border-top: 6px solid #1a1a1a;
+    background-color: #fff;
+
+    .separator {
+      display: inline;
+    }
+
+    .line-break {
+      display: none;
+    }
+  }
+}
